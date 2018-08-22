@@ -1,0 +1,86 @@
+/*
+Theme Name: Colormag Pro Child Theme
+Theme URI: http://themegrill.com/themes/colormag/
+Description: Child Theme for Colormag Pro
+Author: ThemeGrill
+Author URI: http://themegrill.com
+Template: colormag-pro
+Version: 1.0
+*/
+
+.view-all-link {
+	display: inline-block;
+	font-size: 12px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	width: 100px;
+	float: right;
+	color: #fff;
+	font-weight: bold;
+    background-color: #0000 !important;
+}
+
+#primary .widget-title {
+	/* border-bottom: 2px solid #191919 !important; */
+	font-size: 18px;
+	margin-bottom: 15px;
+	padding-bottom: 0;
+}
+
+#primary .widget-title span {
+	background-color: #0000 !important;
+	color: #191919;
+	padding: 6px 12px;
+	display: inline-block;
+	font-weight: bold;
+}
+
+.tabbed-widget li.active, .tabbed-widget li:hover {
+	opacity: 1;
+	filter: alpha(opacity=100);
+    font-weight: bold;
+}
+
+.tabbed-widget ul li {
+	background-color: #0000 !important;
+	display: inline-block;
+	float: left;
+	text-align: center;
+	width: 33.3334%;
+	padding: 5px 0;
+}
+
+.tabbed-widget ul li a {
+	color: #191919;
+	font-size: 15px;
+}
+
+.tabbed-widget ul li i {
+	margin-right: 5px;
+	color: #191919;
+}
+
+#secondary .widget-title {
+	/* border-bottom: 2px solid #191919 !important; */
+	font-size: 18px;
+	margin-bottom: 15px;
+	padding-bottom: 0;
+        
+}
+
+#secondary .widget-title span {
+	background-color: #0000 !important;
+	color: #191919;
+	padding: 6px 12px;
+	display: inline-block;
+        font-weight: bold;
+}
+
+.page-header .page-title span {
+	background-color: #289dcc;
+	color: #191919;
+	padding: 6px 12px;
+	display: inline-block;
+        font-weight: bolder;
+}
