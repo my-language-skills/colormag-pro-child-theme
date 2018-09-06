@@ -44,6 +44,8 @@ function colormag_colored_category() {
                 $output .= '<a href="' . get_category_link($category->term_id) . '" class="standalone-cat-link" style="background: #0000; color: #191919; "  rel="category tag">' . $category->cat_name . '</a>' . $slashsep;
             }
         }
+        
+        $output = rtrim($output,"/ ");
 
         $output .= '</span></div>';
         echo trim($output, $separator);
@@ -66,6 +68,8 @@ function colormag_colored_category_on_pic() {
                 $output .= '<a href="' . get_category_link($category->term_id) . '" class="standalone-cat-link" style="background: #0000; color: #191919  rel="category tag">' . $category->cat_name . '</a>' . $slashsep;
             }
         }
+        
+        $output = rtrim($output,"/ ");
 
         $output .= '</span></div>';
         echo trim($output, $separator);
@@ -88,6 +92,8 @@ function colormag_colored_category_return() {
                 $output .= '<a href="' . get_category_link($category->term_id) . '" class="standalone-cat-link" style="background: #0000; color: #191919 rel="category tag">' . $category->cat_name . '</a>' . $slashsep;
             }
         }
+        
+        $output = rtrim($output,"/ ");
 
         $output .= '</span></div>';
         $output = trim($output, $separator);
@@ -5951,4 +5957,54 @@ function choose_image_size() {
     
 }
 
+function colormag_entry_meta() {
+    if ('post' == get_post_type()) :
+        echo '<div class="below-entry-meta">';
+        ?>
+
+        <?php
+        $time_string = '<time class="entry-date published" datetime="%1$s"' . colormag_schema_markup('entry_time') . '>%2$s</time>';
+        if (get_the_time('U') !== get_the_modified_time('U')) {
+            $time_string .= '<time class="updated" datetime="%3$s"' . colormag_schema_markup('entry_time_modified') . '>%4$s</time>';
+        }
+        $time_string = sprintf($time_string, esc_attr(get_the_date('c')), esc_html(get_the_date()), esc_attr(get_the_modified_date('c')), esc_html(get_the_modified_date())
+        );
+        printf(__('<span class="posted-on"><a href="%1$s" title="%2$s" rel="bookmark"><i class="fa fa-calendar-o"></i> %3$s</a></span>', 'colormag'), esc_url(get_permalink()), esc_attr(get_the_time()), $time_string
+        );
+        ?>
+
+                        <span class="byline"<?php echo colormag_schema_markup('author'); ?>><span class="author vcard" itemprop="name"><i class="fa fa-user"></i><a class="url fn n" href="<?php echo esc_url(get_author_posts_url(get_the_author_meta('ID'))); ?>" title="<?php echo get_the_author(); ?>"><?php echo esc_html(get_the_author()); ?></a></span></span>
+
+        <?php
+        /* if (get_theme_mod('colormag_post_view_entry_meta_remove', 0) == 0) {
+            echo colormag_post_view_display(get_the_ID());
+        } */
+        ?>
+
+        <?php if (!post_password_required() && comments_open()) { ?>
+                            <span class="comments"><?php comments_popup_link(__('<i class="fa fa-comment"></i> 0 Comments', 'colormag'), __('<i class="fa fa-comment"></i> 1 Comment', 'colormag'), __('<i class="fa fa-comments"></i> % Comments', 'colormag')); ?></span>
+            <?php
+        }
+        $tags_list = get_the_tag_list('<span class="tag-links"' . colormag_schema_markup('tag') . '><i class="fa fa-tags"></i>', __(', ', 'colormag'), '</span>');
+        if ($tags_list) {
+            echo $tags_list;
+        }
+
+        // Display the post reading time.
+        if (get_theme_mod('colormag_reading_time_setting', 0) == 1) {
+            ?>
+                                    <span class="reading-time">
+                                            <span class="eta"></span> <?php esc_html_e('min read', 'colormag'); ?>
+                                    </span>
+        <?php
+        }
+
+        // edit button remove option add
+        if (get_theme_mod('colormag_edit_button_entry_meta_remove', 0) == 0) {
+            edit_post_link(__('Edit', 'colormag'), '<span class="edit-link"><i class="fa fa-edit"></i>', '</span>');
+        }
+
+        echo '</div>';
+    endif;
+}
 ?>
