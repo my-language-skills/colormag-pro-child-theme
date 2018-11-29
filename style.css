@@ -16,9 +16,11 @@ Version: 1.0
     text-align: justify;
 }
 
+/* 
 .article-content {
     text-align: justify;
 }
+*/
 
 /*
     View all button background is now transparent
@@ -26,4 +28,45 @@ Version: 1.0
 
 .view-all-link {
     background-color: #0000;
+}
+
+/*
+    Widgets Title
+*/
+
+.widget-title span {
+    background-color: #0000 !important;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+#primary .widget-title {
+    border-bottom: 3px solid !important; /* We can change the color and thickness through colormag_custom_css_child function using php code */
+}
+
+#primary .widget-title span {
+    color: #000;                    /* We can change the color through colormag_custom_css_child function using php code */
+}
+
+#secondary .widget-title {
+    border-bottom: 3px solid !important; /* We can change the color and thickness through colormag_custom_css_child function using php code */
+}
+
+#secondary .widget-title span {
+    color: #000;                    /* We can change the color through colormag_custom_css_child function using php code */
+}
+
+/*
+    Category links
+*/
+
+.cat-links a {
+    background: #0000 !important;
+    color: #289dcc !important;
+}
+
+.cat-links a:hover {
+    background: #0000 !important;
+    color: #289dcc !important;
+    font-weight: bold;
 }
