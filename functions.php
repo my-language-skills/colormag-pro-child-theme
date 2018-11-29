@@ -18,6 +18,16 @@ function colormag_child_enqueue_styles() {
 add_action( 'wp_enqueue_scripts', 'colormag_child_enqueue_styles' );
 
 /**
+ * Remove colormag_custom_css function
+ */
+
+function child_remove_parent_function() {
+    remove_action( 'wp_head', 'colormag_custom_css', 100 );
+}
+
+add_action( 'wp_loaded', 'child_remove_parent_function' );
+
+/**
  * Custom Internal CSS for child theme
  */
 
@@ -446,5 +456,7 @@ function colormag_custom_css_child() {
  */
 
 add_action( 'wp_head', 'colormag_custom_css_child', 105 );
+
+
 
 ?>

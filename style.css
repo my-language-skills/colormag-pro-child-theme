@@ -20,6 +20,10 @@ Version: 1.0
     text-align: justify;
 }
 
+/*
+    View all button background is now transparent
+*/
+
 .view-all-link {
     background-color: #0000;
 }
