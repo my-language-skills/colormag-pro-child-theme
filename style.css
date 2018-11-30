@@ -125,3 +125,17 @@ Version: 1.0
     background-color: #0000;
     font-weight: bold;
 }
+
+/*
+    Post Comment button
+*/
+
+.submit {
+    background-color: #0000 !important;
+    color: #289dcc !important;
+    box-shadow: inset 0 0 0 1px #289dcc;
+}
+
+.submit:hover {
+    font-weight: bold;
+}
