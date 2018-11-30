@@ -107,3 +107,21 @@ Version: 1.0
 .active {
     font-weight: bold !important;
 }
+
+/*
+	Read more button/link
+*/
+
+.more-link {
+    background-color: #0000;
+}
+
+.more-link span{
+    color: #289dcc;
+    font-size: 15px;
+}
+
+.more-link span:hover{
+    background-color: #0000;
+    font-weight: bold;
+}
