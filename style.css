@@ -70,3 +70,18 @@ Version: 1.0
     color: #289dcc !important;
     font-weight: bold;
 }
+
+/*
+    Post Title
+*/
+
+.page-header .page-title {
+    border-bottom: 3px solid !important;
+}
+
+.page-title span {
+    background-color: #0000 !important;
+    color: #000 !important;
+    font-weight: bold;
+    font-size: 19px;
+}
