@@ -85,3 +85,25 @@ Version: 1.0
     font-weight: bold;
     font-size: 19px;
 }
+
+/*
+    Tabbed widget
+*/
+
+.tabbed-widget ul li {
+    background-color: #0000 !important;
+}
+
+.tabbed-widget ul li a {
+    /*color: #000; */
+    color: #289dcc;
+}
+
+.tabs a .fa {
+    /*color: #000; */
+    color: #289dcc !important;
+}
+
+.active {
+    font-weight: bold !important;
+}
