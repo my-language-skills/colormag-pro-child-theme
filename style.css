@@ -139,3 +139,23 @@ Version: 1.0
 .submit:hover {
     font-weight: bold;
 }
+
+/*
+    Header menu and logo (screen width less than 768px)
+*/
+
+@media only screen and (max-width: 768px) and (min-width: 200px) {
+    .logged-in #masthead #site-navigation {
+        background-color: #0000 !important;
+        top: -59px !important;
+    }
+    
+    #site-navigation {
+        background-color: #0000 !important;
+        top: -59px !important;
+    }
+    
+    #header-text-nav-wrap {
+        padding-left: 55px !important;
+    }
+}
