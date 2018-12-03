@@ -172,6 +172,11 @@ Version: 1.0
     margin-right: 10px;
 }
 
+#multipageMasterHome img {
+    height: 30px;
+    width: 150px;
+}
+
 /*
     Screen width less than 768px
 */

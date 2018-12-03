@@ -2,6 +2,6 @@ window.onload = addHomeScreenButton();
 
 function addHomeScreenButton() {
     
-    jQuery('#header-text-nav-container .news-bar .inner-wrap').prepend('<a href="#" id="multipageMasterHome"><img height="30px" width="30px" src="#"/></a>');
+    jQuery('#header-text-nav-container .news-bar .inner-wrap').prepend('<a href="https://www.comunicavalencia.es" id="multipageMasterHome"><img src="https://www.comunicavalencia.es/wp-content/uploads/2018/11/cropped-Comunica-Valencia-logo-web-1.jpg"/></a>');
     
 }
