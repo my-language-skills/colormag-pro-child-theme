@@ -109,7 +109,7 @@ Version: 1.0
 }
 
 /*
-	Read more button/link
+        Read more button/link
 */
 
 .more-link {
@@ -149,33 +149,57 @@ Version: 1.0
 }
 
 /*
+    Header news bar
+*/
+
+#header-text-nav-container .news-bar .inner-wrap .clearfix {
+    height: 30px;
+}
+
+#header-text-nav-container .news-bar .inner-wrap .clearfix .social-links .clearfix{
+    position: relative;
+    top: -25px;
+}
+
+/*
+    Home button above all
+*/
+
+#multipageMasterHome {
+    color: #495057;
+    /*font-size: x-large;*/
+    float: left;
+    margin-right: 10px;
+}
+
+/*
     Screen width less than 768px
 */
 
 @media only screen and (max-width: 768px) and (min-width: 200px) {
-    
+
     /*
         Header menu and logo
     */
-    
+
     .logged-in #masthead #site-navigation {
         background-color: #0000 !important;
         top: -59px !important;
     }
-    
+
     #site-navigation {
         background-color: #0000 !important;
         top: -59px !important;
     }
-    
+
     #header-text-nav-wrap {
         padding-left: 55px !important;
     }
-    
+
     /*
         Comments textarea
     */
-    
+
     #comment {
         height: 5em;
     }
