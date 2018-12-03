@@ -141,10 +141,23 @@ Version: 1.0
 }
 
 /*
-    Header menu and logo (screen width less than 768px)
+    Comments textarea
+*/
+
+#comment {
+    height: 8em;
+}
+
+/*
+    Screen width less than 768px
 */
 
 @media only screen and (max-width: 768px) and (min-width: 200px) {
+    
+    /*
+        Header menu and logo
+    */
+    
     .logged-in #masthead #site-navigation {
         background-color: #0000 !important;
         top: -59px !important;
@@ -157,5 +170,13 @@ Version: 1.0
     
     #header-text-nav-wrap {
         padding-left: 55px !important;
+    }
+    
+    /*
+        Comments textarea
+    */
+    
+    #comment {
+        height: 5em;
     }
 }
