@@ -170,11 +170,9 @@ Version: 1.0
     /*font-size: x-large;*/
     float: left;
     margin-right: 10px;
-}
-
-#multipageMasterHome img {
-    height: 30px;
-    width: 150px;
+    background-image: url(img/logo-small.png);
+    height: 31px;
+    width: 151px;
 }
 
 /*
