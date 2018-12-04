@@ -2,6 +2,10 @@ ColorMag Pro Child Theme Changelog
 All notable changes to this project will be documented in this file.
 
 ## [Unreleased] - 2018-12-04
+### Fixed
+- Fixed issue with not showing the Master Home in other multisites.
+
+## [1.0.1] - 2018-12-04
 ### Changed
 - Reduced blank spaces on big banner logo and header in homepage and changelog added.
 

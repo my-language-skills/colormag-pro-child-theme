@@ -460,4 +460,20 @@ function colormag_custom_css_child() {
  * Hooks the Custom Internal CSS to head section of child theme
  */
 add_action('wp_head', 'colormag_custom_css_child', 105);
+
+/**
+ * Main blog in multisite check
+ */
+
+function checkMainSite() {
+    if (is_main_site()){
+        echo '<style type="text/css">
+        #multipageMasterHome {
+            display: none;
+        }
+        </style>';
+    }
+}
+
+add_action('wp', 'checkMainSite');
 ?>
