@@ -153,7 +153,7 @@ Version: 1.0
 */
 
 #header-text-nav-container .news-bar .inner-wrap .clearfix {
-    height: 30px;
+    height: 15px;
 }
 
 #header-text-nav-container .news-bar .inner-wrap .clearfix .social-links .clearfix{
@@ -173,6 +173,14 @@ Version: 1.0
     background-image: url(img/logo-small.png);
     height: 31px;
     width: 151px;
+}
+
+/*
+    Big Logo banner top middle
+*/
+
+#masthead.colormag-header-classic #header-text-nav-wrap {
+    padding: 0px 0px 0px;
 }
 
 /*
