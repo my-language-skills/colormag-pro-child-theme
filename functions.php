@@ -476,4 +476,21 @@ function checkMainSite() {
 }
 
 add_action('wp', 'checkMainSite');
+
+/**
+ * Hide image caption. Show caption if we only visit the specific post page.
+ */
+
+function hideImageCaption() {
+    if (!is_single()){
+        echo '<style type="text/css">
+        .featured-image-caption {
+            display: none !important;
+        }
+        </style>';
+    }
+}
+
+add_action('wp', 'hideImageCaption');
+
 ?>
