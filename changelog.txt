@@ -1,7 +1,11 @@
 ColorMag Pro Child Theme Changelog
 All notable changes to this project will be documented in this file.
 
-## [Unreleased] - 2018-12-04
+## [Unreleased] - 2018-12-05
+### Fixed
+- Fixed issue with menu toggle being on top of Master Home link on the header.
+
+## [1.0.2] - 2018-12-04
 ### Fixed
 - Fixed issue with not showing the Master Home in other multisites.
 
