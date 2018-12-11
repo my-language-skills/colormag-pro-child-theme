@@ -1,0 +1,277 @@
+/*
+Theme Name: Colormag Pro Child Theme - v2.0
+Theme URI: http://themegrill.com/themes/colormag/
+Description: Child Theme for Colormag Pro
+Author: ThemeGrill
+Author URI: http://themegrill.com
+Template: colormag-pro
+Version: 1.0
+*/
+
+/*
+    Posts Justification
+*/
+
+.post .entry-content {
+    text-align: justify;
+}
+
+/* 
+.article-content {
+    text-align: justify;
+}
+*/
+
+/*
+    View all button background is now transparent
+*/
+
+.view-all-link {
+    background-color: #0000;
+}
+
+/*
+    Widgets Title
+*/
+
+.widget-title span {
+    background-color: #0000 !important;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+#primary .widget-title {
+    border-bottom: 3px solid !important; /* We can change the color and thickness through colormag_custom_css_child function using php code */
+}
+
+#primary .widget-title span {
+    color: #000;                    /* We can change the color through colormag_custom_css_child function using php code */
+}
+
+#secondary .widget-title {
+    border-bottom: 3px solid !important; /* We can change the color and thickness through colormag_custom_css_child function using php code */
+}
+
+#secondary .widget-title span {
+    color: #000;                    /* We can change the color through colormag_custom_css_child function using php code */
+}
+
+/*
+    Category links
+*/
+
+.cat-links a {
+    background: #0000 !important;
+    color: #289dcc !important;
+}
+
+.cat-links a:hover {
+    background: #0000 !important;
+    color: #289dcc !important;
+    font-weight: bold;
+}
+
+/*
+    Post Title
+*/
+
+.page-header .page-title {
+    border-bottom: 3px solid !important;
+}
+
+.page-title span {
+    background-color: #0000 !important;
+    color: #000 !important;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+/*
+    Tabbed widget
+*/
+
+.tabbed-widget ul li {
+    background-color: #0000 !important;
+}
+
+.tabbed-widget ul li a {
+    /*color: #000; */
+    color: #289dcc;
+}
+
+.tabs a .fa {
+    /*color: #000; */
+    color: #289dcc !important;
+}
+
+.active {
+    font-weight: bold !important;
+}
+
+/*
+        Read more button/link
+*/
+
+.more-link {
+    background-color: #0000;
+}
+
+.more-link span{
+    color: #289dcc;
+    font-size: 15px;
+}
+
+.more-link span:hover{
+    background-color: #0000;
+    font-weight: bold;
+}
+
+/*
+    Post Comment button
+*/
+
+.submit {
+    background-color: #0000 !important;
+    color: #289dcc !important;
+    box-shadow: inset 0 0 0 1px #289dcc;
+}
+
+.submit:hover {
+    font-weight: bold;
+}
+
+/*
+    Comments textarea
+*/
+
+#comment {
+    height: 8em;
+}
+
+/*
+    Header news bar
+*/
+
+#header-text-nav-container .news-bar .inner-wrap .clearfix {
+    height: 15px;
+}
+
+#header-text-nav-container .news-bar .inner-wrap .clearfix .social-links .clearfix{
+    position: relative;
+    top: -25px !important;
+}
+
+/*
+    Home button above all
+*/
+
+#multipageMasterHome {
+    color: #495057;
+    /*font-size: x-large;*/
+    float: left;
+    margin-right: 10px;
+    background-image: url(img/cv-provincia.png);
+    height: 31px;
+    width: 151px;
+}
+
+/*
+    Big Logo banner top middle
+*/
+
+#masthead.colormag-header-classic #header-text-nav-wrap {
+    padding: 0px 0px 0px;
+}
+
+/*
+    Screen width less than 768px
+*/
+
+@media only screen and (max-width: 768px) and (min-width: 521px){
+
+    /*
+        Header menu and logo
+    */
+
+    .logged-in #masthead #site-navigation {
+        background-color: #0000 !important;
+        top: -75px !important;
+    }
+
+    #site-navigation {
+        background-color: #0000 !important;
+        top: -59px !important;
+    }
+
+    #header-text-nav-wrap {
+        padding-left: 55px !important;
+    }
+
+    /*
+        Comments textarea
+    */
+
+    #comment {
+        height: 5em;
+    }
+}
+
+/*
+    Screen width less than 520px
+*/
+
+@media only screen and (max-width: 520px) and (min-width: 451px){
+
+    .logged-in #masthead #site-navigation {
+        background-color: #0000 !important;
+        top: -47px !important;
+    }
+    
+    #masthead.colormag-header-classic #site-navigation .menu-toggle{
+        line-height: 1em !important;
+    }
+    
+    #site-navigation {
+        top: -47px !important;
+    }
+}
+
+/*
+    Screen width less than 450px
+*/
+
+@media only screen and (max-width: 450px) and (min-width: 351px) {
+
+    .logged-in #masthead #site-navigation {
+        background-color: #0000 !important;
+        top: -25px !important;
+    }
+    
+    #masthead.colormag-header-classic #site-navigation .menu-toggle{
+        line-height: 0px !important;
+    }
+    
+    #site-navigation {
+        top: -35px !important;
+    }
+}
+
+/*
+    Screen width less than 350px
+*/
+
+@media only screen and (max-width: 350px) and (min-width: 200px) {
+
+    .logged-in #masthead #site-navigation {
+        background-color: #0000 !important;
+        top: -30px !important;
+    }
+    
+    #masthead.colormag-header-classic #site-navigation .menu-toggle{
+        line-height: 0px !important;
+    }
+    
+    #site-navigation {
+        top: -30px !important;
+    }
+}
