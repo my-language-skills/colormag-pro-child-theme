@@ -1,7 +1,11 @@
 ColorMag Pro Child Theme Changelog
 All notable changes to this project will be documented in this file.
 
-## [Release - 1.1.1] - 2018-12-11
+## [Release - 1.1.2] - 2018-12-13
+### Fixed
+- Fixed style issues affecting menu toggle and header image.
+
+## [1.1.1] - 2018-12-11
 ### Fixed
 - Fixed issue with menu toggle on top of masterhome link, new image for masterhome link.
 
