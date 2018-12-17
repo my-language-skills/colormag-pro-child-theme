@@ -4,6 +4,25 @@
  * 
  */
 
+/**
+ * Replace post featured image default size
+ */
+
+function wpdocs_setup_theme() {
+    add_theme_support('post-thumbnails');
+    set_post_thumbnail_size(768);
+}
+add_action( 'after_setup_theme', 'wpdocs_setup_theme' );
+
+function yourtheme_child_theme_setup() {
+    add_image_size( 'colormag-featured-image', 768 );
+}
+add_action( 'after_setup_theme', 'yourtheme_child_theme_setup', 11 );
+
+/**
+ * Enqueue parent and child theme style.css
+ */
+
 function colormag_child_enqueue_styles() {
 
     $parent_style = 'colormag_style'; //parent theme style handle 'colormag_style'
@@ -464,9 +483,8 @@ add_action('wp_head', 'colormag_custom_css_child', 105);
 /**
  * Main blog in multisite check
  */
-
 function checkMainSite() {
-    if (is_main_site()){
+    if (is_main_site()) {
         echo '<style type="text/css">
         #multipageMasterHome {
             display: none;
@@ -480,9 +498,8 @@ add_action('wp', 'checkMainSite');
 /**
  * Hide image caption. Show caption if we only visit the specific post page.
  */
-
 function hideImageCaption() {
-    if (!is_single()){
+    if (!is_single()) {
         echo '<style type="text/css">
         .featured-image-caption {
             display: none !important;
