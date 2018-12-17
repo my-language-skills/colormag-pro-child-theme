@@ -1,7 +1,11 @@
 ColorMag Pro Child Theme Changelog
 All notable changes to this project will be documented in this file.
 
-## [Release - 1.1.3] - 2018-12-17
+## [Release - 1.1.4] - 2018-12-17
+### Fixed
+- Fixed issue with menu toggle being on top of Master Home link on the header.
+
+## [1.1.3] - 2018-12-17
 ### Changed
 - Changed the default post image thimbnail size of a post in its page to crop the width to 768px.
 - The Read More button is now not displayed.
