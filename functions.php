@@ -5,21 +5,6 @@
  */
 
 /**
- * Replace post featured image default size
- */
-
-function wpdocs_setup_theme() {
-    add_theme_support('post-thumbnails');
-    set_post_thumbnail_size(768);
-}
-add_action( 'after_setup_theme', 'wpdocs_setup_theme' );
-
-function yourtheme_child_theme_setup() {
-    add_image_size( 'colormag-featured-image', 768 );
-}
-add_action( 'after_setup_theme', 'yourtheme_child_theme_setup', 11 );
-
-/**
  * Enqueue parent and child theme style.css
  */
 

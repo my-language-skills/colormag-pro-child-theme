@@ -1,13 +1,23 @@
 ColorMag Pro Child Theme Changelog
 All notable changes to this project will be documented in this file.
 
-## [Release - 1.1.4] - 2018-12-17
+## [Release - 1.1.5] - 2018-12-17
+### Added
+- Added content-single.php file. 
+
+### Changed
+- Changed the default post image thumbnail size of a post in its page to medium_large.
+
+### Fixed
+- Fixed issue with the post featured image being full size in the archives page.
+
+## [1.1.4] - 2018-12-17
 ### Fixed
 - Fixed issue with menu toggle being on top of Master Home link on the header.
 
 ## [1.1.3] - 2018-12-17
 ### Changed
-- Changed the default post image thimbnail size of a post in its page to crop the width to 768px.
+- Changed the default post image thumbnail size of a post in its page to crop the width to 768px.
 - The Read More button is now not displayed.
 
 ### Fixed
