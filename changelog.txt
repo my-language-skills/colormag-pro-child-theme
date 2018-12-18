@@ -1,7 +1,11 @@
 ColorMag Pro Child Theme Changelog
 All notable changes to this project will be documented in this file.
 
-## [Release - 1.1.6] - 2018-12-18
+## [Release - 1.1.7] - 2018-12-18
+### Fixed
+- Fixed issue that was causing the logo banner to be unclickable. 
+
+## [1.1.6] - 2018-12-18
 ### Fixed
 - Fixed issue that was causing the logo banner to be hidden under the menu toggle. 
 
