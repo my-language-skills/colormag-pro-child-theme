@@ -30,7 +30,7 @@ function my_set_image_meta_upon_image_upload( $post_ID ) {
 		$my_image_meta = array(
 			'ID'		=> $post_ID,			// Specify the image (ID) to be updated
 			'post_title'	=> $my_image_title,		// Set image Title to sanitized title
-			'post_excerpt'	=> $my_image_title,		// Set image Caption (Excerpt) to sanitized title
+		//	'post_excerpt'	=> $my_image_title,		// Set image Caption (Excerpt) to sanitized title
 			'post_content'	=> $my_image_title,		// Set image Description (Content) to sanitized title
 		);
 
