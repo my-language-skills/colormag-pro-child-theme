@@ -8,6 +8,7 @@
 
 /* Automatically set the image Title, Alt-Text, Caption & Description upon upload
 http://brutalbusiness.com/automatically-set-the-wordpress-image-title-alt-text-other-meta/
+for adding the tags and categories: https://wordpress.org/plugins/seo-image/
 --------------------------------------------------------------------------------------*/
 add_action( 'add_attachment', 'my_set_image_meta_upon_image_upload' );
 function my_set_image_meta_upon_image_upload( $post_ID ) {
