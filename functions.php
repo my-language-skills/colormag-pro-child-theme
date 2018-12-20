@@ -23,7 +23,7 @@ function my_set_image_meta_upon_image_upload( $post_ID ) {
 		$my_image_title = preg_replace( '%\s*[-_\s]+\s*%', ' ',  $my_image_title );
 
 		// Sanitize the title:  capitalize first letter of every word (other letters lower case):
-		$my_image_title = ucfirst( strtolower( $my_image_title ) );
+		$my_image_title = strtolower( $my_image_title );
 
 		// Create an array with the image meta (Title, Caption, Description) to be updated
 		// Note:  comment out the Excerpt/Caption or Content/Description lines if not needed
