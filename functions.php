@@ -536,4 +536,17 @@ function hideImageCaption() {
 
 add_action('wp', 'hideImageCaption');
 
+function colormag_add_style_to_feed() {
+	echo '<style type="text/css">
+        .featured-image-caption {
+            display: none !important;
+        }
+        </style>';
+}
+
+add_action('do_feed', 'colormag_add_style_to_feed', 1);
+add_action('do_feed_rdf', 'colormag_add_style_to_feed', 1);
+add_action('do_feed_rss', 'colormag_add_style_to_feed', 1);
+add_action('do_feed_rss2', 'colormag_add_style_to_feed', 1);
+add_action('do_feed_atom', 'colormag_add_style_to_feed', 1);
 ?>
