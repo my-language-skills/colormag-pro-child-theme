@@ -1,7 +1,14 @@
 ColorMag Pro Child Theme Changelog
 All notable changes to this project will be documented in this file.
 
-## [Release - 1.1.7] - 2018-12-18
+## [Release - 1.1.8] - 2019-01-14
+### Fixed
+- Fixed issue that was causing RSS feeds to not run properly. Title,excerpt, content
+
+### Added
+- Automatically set the image Title, Alt-Text, Caption & Description upon upload
+
+## [1.1.7] - 2018-12-18
 ### Fixed
 - Fixed issue that was causing the logo banner to be unclickable. 
 
