@@ -486,6 +486,22 @@ function colormag_custom_css_child() {
     $colormag_internal_css .= '.view-all-link {color:' . $primary_color . '; transition: all .1s ease-in-out;}
                 .view-all-link:hover {transform: scale(1.3);}';
 
+	/**
+	* Main blog in multisite check
+	*/
+	
+	if (is_main_site()) {
+        $colormag_internal_css .= '#multipageMasterHome {display: none;}';
+	}
+	
+	/**
+	* Hide image caption. Show caption if we only visit the specific post page.
+	*/
+ 
+	if (!is_single()) {
+        $colormag_internal_css .= '.featured-image-caption {display: none !important;}';
+	}
+				
     if (!empty($colormag_internal_css)) {
         echo '<!-- ' . get_bloginfo('name') . ' Internal Styles -->';
         ?>
@@ -505,48 +521,4 @@ function colormag_custom_css_child() {
  * Hooks the Custom Internal CSS to head section of child theme
  */
 add_action('wp_head', 'colormag_custom_css_child', 105);
-
-/**
- * Main blog in multisite check
- */
-function checkMainSite() {
-    if (is_main_site()) {
-        echo '<style type="text/css">
-        #multipageMasterHome {
-            display: none;
-        }
-        </style>';
-    }
-}
-
-add_action('wp', 'checkMainSite');
-
-/**
- * Hide image caption. Show caption if we only visit the specific post page.
- */
-function hideImageCaption() {
-    if (!is_single()) {
-        echo '<style type="text/css">
-        .featured-image-caption {
-            display: none !important;
-        }
-        </style>';
-    }
-}
-
-add_action('wp', 'hideImageCaption');
-
-function colormag_add_style_to_feed() {
-	echo '<style type="text/css">
-        .featured-image-caption {
-            display: none !important;
-        }
-        </style>';
-}
-
-add_action('do_feed', 'colormag_add_style_to_feed', 1);
-add_action('do_feed_rdf', 'colormag_add_style_to_feed', 1);
-add_action('do_feed_rss', 'colormag_add_style_to_feed', 1);
-add_action('do_feed_rss2', 'colormag_add_style_to_feed', 1);
-add_action('do_feed_atom', 'colormag_add_style_to_feed', 1);
 ?>

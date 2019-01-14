@@ -1,7 +1,11 @@
 ColorMag Pro Child Theme Changelog
 All notable changes to this project will be documented in this file.
 
-## [Release - 1.1.8] - 2019-01-14
+## [Release - 1.1.9] - 2019-01-14
+### Fixed
+- Fixed issue that was causing RSS feeds not to run properly.
+
+## [1.1.8] - 2019-01-14
 ### Fixed
 - Fixed issue that was causing RSS feeds to not run properly.
 
