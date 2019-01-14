@@ -6,7 +6,7 @@ All notable changes to this project will be documented in this file.
 - Fixed issue that was causing RSS feeds to not run properly.
 
 ### Added
-- Automatically set the image Title, Alt-Text, Caption & Description upon upload
+- Automatically set the image Title, Alt-Text & Description upon upload
 
 ## [1.1.7] - 2018-12-18
 ### Fixed
