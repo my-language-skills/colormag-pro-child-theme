@@ -21,11 +21,19 @@ function colormagproChildResize() {
         w = w - wtemp;
         document.getElementById("site-navigation").style.width = "50px";
         document.getElementById("site-navigation").style.padding_left = "3%";
-        document.getElementById("menu-primary").style.width = w;
-        document.getElementById("menu-primary").style.overflow = "hidden";
-        
+        if (document.getElementById("menu-primary")) {
+            document.getElementById("menu-primary").style.width = w + 'px';
+            document.getElementById("menu-primary").style.overflow = "hidden";
+        } else if (document.getElementById("menu-primario")) {
+            document.getElementById("menu-primario").style.width = w + 'px';
+            document.getElementById("menu-primario").style.overflow = "hidden";
+        }
     } else {
-        document.getElementById("menu-primary").style.width = "100%";
+        if (document.getElementById("menu-primary")) {
+            document.getElementById("menu-primary").style.width = "100%";
+        } else if (document.getElementById("menu-primario")) {
+            document.getElementById("menu-primario").style.width = "100%";
+        }
         document.getElementById("site-navigation").style.width = "100%";
         document.getElementById("site-navigation").style.padding_left = "0";
     }
