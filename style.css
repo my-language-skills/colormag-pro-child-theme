@@ -222,7 +222,7 @@ Version: 1.1.11
 
     #site-navigation {
         background-color: #0000 !important;
-        top: -59px !important;
+        top: -50px !important;
     }
 
     #header-text-nav-wrap {
@@ -256,7 +256,7 @@ Version: 1.1.11
 
     .logged-in #masthead #site-navigation {
         background-color: #0000 !important;
-        top: -43px !important;
+        top: -42px !important;
     }
     
     #masthead.colormag-header-classic #site-navigation .menu-toggle{
@@ -264,7 +264,7 @@ Version: 1.1.11
     }
     
     #site-navigation {
-        top: -47px !important;
+        top: -40px !important;
     }
 	
 	#header-logo-image {
@@ -298,7 +298,7 @@ Version: 1.1.11
     }
     
     #site-navigation {
-        top: -35px !important;
+        top: -33px !important;
     }
 	
 	#header-logo-image {
@@ -332,7 +332,7 @@ Version: 1.1.11
     }
     
     #site-navigation {
-        top: -30px !important;
+        top: -29px !important;
     }
 	
 	#header-logo-image {
