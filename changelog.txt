@@ -1,7 +1,11 @@
 ColorMag Pro Child Theme Changelog
 All notable changes to this project will be documented in this file.
 
-## [Release - 1.2.0] - 2019-02-16
+## [Release - 1.1.11] - 2019-02-18
+### Fixed
+- Bug fixes on main menu and news bar.
+
+## [1.1.10] - 2019-02-16
 ### Fixed
 - Fixed issue that was causing the main menu in mobile view not to appear properly.
 

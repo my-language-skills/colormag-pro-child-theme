@@ -5,7 +5,7 @@ Description: Child Theme for Colormag Pro
 Author: @tooulakis13
 Author URI: https://github.com/my-language-skills/
 Template: colormag-pro
-Version: 1.1.10
+Version: 1.1.11
 */
 
 /*
@@ -194,7 +194,15 @@ Version: 1.1.10
 */
 
 .main-navigation, #site-navigation  {
-    background-color: #0000 !important;
+    /*background-color: #0000 !important;*/
+}
+
+/*
+    News Bar
+*/
+
+.news-bar {
+    margin-bottom: 2px;
 }
 
 /*
@@ -219,6 +227,12 @@ Version: 1.1.10
 
     #header-text-nav-wrap {
         padding-left: 55px !important;
+    }
+	
+	#menu-primary {
+        overflow: unset !important;
+        overflow-y: scroll !important;
+        overflow-x: hidden !important;
     }
 
     /*
@@ -256,6 +270,12 @@ Version: 1.1.10
 	#header-logo-image {
         padding-left: 50px !important;
     }
+	
+	#menu-primary {
+        overflow: unset !important;
+        overflow-y: scroll !important;
+        overflow-x: hidden !important;
+    }
 }
 
 /*
@@ -284,6 +304,12 @@ Version: 1.1.10
 	#header-logo-image {
         padding-left: 50px !important;
     }
+	
+	#menu-primary {
+        overflow: unset !important;
+        overflow-y: scroll !important;
+        overflow-x: hidden !important;
+    }
 }
 
 /*
@@ -311,6 +337,12 @@ Version: 1.1.10
 	
 	#header-logo-image {
         padding-left: 55px !important;
+    }
+	
+	#menu-primary {
+        overflow: unset !important;
+        overflow-y: scroll !important;
+        overflow-x: hidden !important;
     }
 	
 	/*
